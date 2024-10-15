@@ -12,6 +12,8 @@ int main() {
             num++;
         }
         cout<<endl;
+        
     }
+    
     return 0;
 }
