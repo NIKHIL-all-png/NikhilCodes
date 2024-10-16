@@ -7,7 +7,7 @@ int main(){
         for(int j=0;j<i+1;j++){
             cout<<"*";
         }
-        for(int j=0;n+2-2*i;j++){
+        for(int j=0;j<n+2-2*i;j++){
             cout<<" ";
         }
         for(int j=0;j<i+1;j++){
