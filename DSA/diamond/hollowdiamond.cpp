@@ -5,51 +5,42 @@ using namespace std;
 int main() {
 
     int n=4;
+    //top
 
     for(int i=0;i<n;i++){
+        //spaces
         for(int j=0;j<n-i-1;j++){
-            
             cout<<" ";
         }
-        for(int j=1;j<=1;j++){
-            cout<<"*";
-        }
-        for(int j=0;j<i;j++){
-            cout<<" ";
-        }
-        for(int j=0;j<i;j++){
-            
-            
-                cout<<" ";
-
-            
-        }
-
-        for(int j=i;j>1;j--){
-          cout<<"*";
-        }
-        cout<<endl;
-
         
-    }
-    int p=3;
+        cout<<"*";
 
-    for(int i=0;i<p;i++){
+        if(i !=0){
+            //spaces
+        for(int j=0;j<(2*i)-1;j++){
+            cout<<" ";
+        }
+        cout<<"*";
+        }
+        cout<<endl;   
+    }
+    //bottom
+    
+    for(int i=0;i<n-1;i++){
+        //spaces
         for(int j=0;j<i+1;j++){
             cout<<" ";
         }
-        for(int j=1;j<=1;j++){
+        
             cout<<"*";
-        }
-        for(int j=0;j<p-i-1;j++){
+        
+        if(i !=n-2){
+        for(int j=0;j<2*(n-2-i)-1;j++){
             cout<<" ";
         }
-        for(int j=i;j<=0;j++){
-            cout<<" ";
-        }
-
-        for(int j=0;j<p-i-1;j++){
-            cout<<"*";
+        
+        
+        cout<<"*";
         }
         cout<<endl;
     }
