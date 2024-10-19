@@ -1,13 +1,15 @@
 #include<iostream>
 
 using namespace std;
-//using nammespace
-int printHello(){
-    cout<<"hello\n";
-    return 3;
+//sum of two numbers
+double sum(double a,double b){
+    double s=a+b;
+    return s;
 }
 
-int main(){
-    //function call
-    cout<< printHello()<<endl;
+//min of two number
+int main() {
+
+    cout<< sum(10.99,5.65)<<endl;
 }
+
