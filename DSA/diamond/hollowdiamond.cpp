@@ -33,6 +33,7 @@ int main()
     // bottom
 
     for (int i = 0; i < n - 1; i++)
+    // Nikhil
     {
         // spaces
         for (int j = 0; j < i + 1; j++)
