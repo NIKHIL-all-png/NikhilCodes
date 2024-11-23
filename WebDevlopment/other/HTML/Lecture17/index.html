@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        /*.img2{
+            position: absolute;
+            
+        }*/
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: aqua;
+        }
+        .img4{
+            position: fixed;<!--The position will be fixed-->
+        }
+        .img3{
+            position: sticky;
+            top: 100px;
+            <!--It will be stick the location at which u stick it-->
+        }
+        .box{
+            background-color: rgb(60, 0, 255);
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="raoi4.jpg" alt="poster 1" width="200px" height="250px">
+        <img class="img2"  src="rasoi2.jpg" alt="poster2" width="200px" height="250px">
+        <img class="img3"  src="rasoi3.jpg" alt="poster3" width="200px" height="250px">
+        <img class="img4"  src="rasoi4.jpg" alt="poster4" width="200px" height="250px">
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
