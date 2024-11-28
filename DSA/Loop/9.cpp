@@ -1,20 +1,18 @@
 #include<iostream>
 using namespace std;
 int main(){
-    char n;
+    int n;
     cin>>n;
-    char i='A';
-    
+    int i=1;
     while(i<=n){
-        char j='A';
-        //int p=0;
-        while(j<=n){
-            cout<<i<<" ";
-            //p++;
+        int j=1;
+        //int d=0;
+        while(j<=i){
+            char c='D'+j-i;
+            cout<<c<<" ";
             j++;
         }
         i++;
         cout<<endl;
-        
     }
 }
