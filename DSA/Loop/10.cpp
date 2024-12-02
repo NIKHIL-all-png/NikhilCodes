@@ -6,15 +6,12 @@ int main(){
     int i=1;
     while(i<=n){
         int j=1;
-        while(j<=n-i+1){
-            cout<<"*";
+        //int d=0;
+        while(j<=i){
+            char c='D'+j-i;
+            cout<<c<<" ";
             j++;
         }
-        // int z=1;
-        // while(z<=i){
-        //     cout<<"*";
-        //     z++;
-        // }
         i++;
         cout<<endl;
     }
