@@ -6,45 +6,53 @@
     <title>Document</title>
     <style>
         .container{
-            border: 1px black solid;
+            border: 1px rgb(45, 63, 203) solid;
             background-color: aqua;
             margin: 2px;
             padding: 2px;
-            display: flex ;
-            flex-direction: column;
-            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            /* flex-flow: column; */
+            height: 1200px;
+            justify-content: start;
+            align-items: start;
+        }
+        .Box{
+            border: 2px rgb(91, 24, 24) solid;
+            margin: 2px;
+            padding: 2px;
+            /* height: 200px;
+            width: 200px; */
         }
         #box1{
-            border: 1px black solid;
+            
             background-color: rgb(255, 234, 0);
-            margin: 2px;
-            padding: 2px;
-            height: 200px;
-            width: 200px;
+            /* order: -1; */
+            /* flex-grow: 5; */
+            /* flex-basis: 500px; */
+            /* order: -2; */
+            align-self: center;
+            
         }
         #box2{
-            border: 1px green;
+            
             background-color: rgb(255, 0, 187);
-            margin: 2px;
-            padding: 2px;
-            height: 200px;
-            width: 200px;
+            /* flex-grow: 1; */
+            
         }
         #box3{
-            border: 1px grey;
+            
             background-color: rgb(29, 18, 112);
-            margin: 2px;
-            padding: 2px;
-            height: 200px;
-            width: 200px;
+            /* flex-grow: 1; */
+            align-self: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div id="box1"></div>
-        <div id="box2"></div>
-        <div id="box3"></div>
+        <div class="Box" id="box1">BOX1</div>
+        <div class="Box" id="box2">BOX2</div>
+        <div class="Box" id="box3">BOX3</div>
 
     </div>
 </body>
