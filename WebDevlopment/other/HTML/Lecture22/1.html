@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:brown;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            --primary-color:brown;
+            --custom-width: 330px;
+            background-color: rgb(20, 106, 30);
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px; 
+            padding: 5px;
+            /* box-shadow: 10px 15px brown; */
+            /* box-shadow: 15px 10px brown, 15px 20px rgb(54, 12, 101); */
+        }
+        #head1{
+            font-size: 30px;
+            /* text-shadow: 2px 13px 2px white; */
+            /* text-shadow: white 2px 13px 2px; */
+            /* text-shadow: 12px 13px; */
+            text-shadow: 12px 13px 1px white, 12px 13px 1px rgb(75, 42, 165);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box">
+            <img src="abc.png" height="70px" width="70px">
+            <h2 id="head1">Welcome to code help</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus minus quaerat placeat et? Iste, eligendi. Atque, optio laudantium enim neque sed sapiente cumque animi deleniti inventore explicabo veritatis consequatur? Asperiores?</p>
+        </div>
+    </div>
+</body>
+</html>

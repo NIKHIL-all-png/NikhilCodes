@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation ka Gyaan</title>
+    <style>
+        .container{   
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+            position: relative;
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            border: 3px solid yellow;
+            margin: 10px;
+            position:relative;
+            /* Animation properties */
+            animation: 5s linear 1s infinite alternate none running rightMovement;
+        }
+        
+        /* Keyframes for the first box */
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 600px;
+            }
+        }
+
+        .box2{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            border: 3px solid yellow;
+            margin: 10px;
+            position:relative;
+            animation: 5s linear 1s infinite alternate none running leftMovement;
+            top: 90px; /* Positioning it below .box */
+        }
+        
+        /* Keyframes for the second box */
+        @keyframes leftMovement{
+            from{
+                top: 300px;
+                left: 600px;
+            }
+            to{
+                top: 300px;
+                left: 0;
+            }
+        }
+        #circle{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 100px;
+            border: 3px solid yellow;
+            margin: 10px;
+            position:relative;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running round;
+            /* top: 1%; */
+            /* left: 400px; */
+        }
+        @keyframes round{
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            30%{
+                top: 5%;
+                left: 90%;
+            }
+            60%{
+                top: 90%;
+                left: 10%;
+            }
+            /* 88%{
+                top: 300px;
+                left: 0px;
+            } */
+            100%{
+                top: 70%;
+                left: 90%;
+            }
+
+        }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <!-- Box 1 -->
+        </div>
+        <div id="circle">
+
+        </div> 
+        <div class="box2">
+            <!-- Box 2 -->
+        </div> 
+    </div>
+</body>
+</html>
