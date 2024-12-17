@@ -6,7 +6,6 @@ void duplicate(int arr[], int n){
         for(int j=i+1;j<n;j++){
             if(arr[i]^arr[j] == 0){
                 cout<<arr[i]<<endl;
-
             }
         }
     }

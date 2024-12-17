@@ -1,1 +1,1 @@
-list<int> n(l);
+cout<<"Top Element:"<<s.top()<<endl;

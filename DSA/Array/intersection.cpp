@@ -5,6 +5,8 @@ void intersection( int arr[],int brr[],int n){
         for(int j=0;j<n;j++){
             if(arr[i]==brr[j]){
                 cout<<arr[i]<<endl;
+                brr[j]==INT8_MIN;
+                //return arr[i];
             }
         }
 }
