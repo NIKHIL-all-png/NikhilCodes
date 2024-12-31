@@ -1,29 +1,30 @@
 #include<iostream>
-#include<vector>
+//#include<vector>
+#include<algorithm>
 using namespace std;
-
 int main (){
-    int arr[6]={1,1,3,4,1,1};
-    //int key=3;
+    int p=-1;
+    //vector<int> arr={1,1,2,2,3,3};
+    int arr[6]={1,1,2,2,3,3};
+    //int n = arr.size();
     int n=sizeof(arr)/sizeof(arr[0]);
-    int k;
-    
-
-    for(int i=0;i<n-1;i++){
-        int a=1;
-        for(int j=i+1;j<n;j++){
-            if(arr[j]==arr[i]){
-                a++;
+    sort(arr,arr+6);
+    //sort(arr.begin(), arr.end());
+    int count = 1;
+    for (int i = 1; i < n; i++) {
+        if (arr[i] == arr[i - 1]) {
+            count++;
+            if (count >= 3) { 
+                cout << arr[i] << endl;
+                p=1;
+                break;
             }
+        } else {
+            count = 1; 
         }
-        if(a>=3){
-            cout<<arr[i]<<endl; 
-            break;
-        }
-        else{
-            a=0;
-        }
-        //a=0;
+    }
+    if(p==-1){
+        cout<<-1<<endl;
     }
     return 0;
 }
