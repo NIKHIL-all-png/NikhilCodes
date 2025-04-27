@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 int num(char c,string str,int length){
     int count=0;
     for(int i=0;i<length;i++){
@@ -17,8 +16,6 @@ int main(){
     getline(cin,str);
     string ch;
     int p=0;
-    
-
     int length=str.length();
     for(int i=0;i<length;i++){
         for(int j=0;j<i;j++){
