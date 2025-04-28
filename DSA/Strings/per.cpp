@@ -9,6 +9,7 @@ bool checkinclusion(string s1,string s2){
         int index=s1[i]-'a';
         count[index]++;
     }
+    
 }
 int main(){
     string s1;

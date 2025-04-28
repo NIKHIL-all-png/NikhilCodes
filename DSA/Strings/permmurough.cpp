@@ -20,13 +20,15 @@ string reversep(string s1){
 }
 int check(string s2,string s1,string revper){
     string s=s1;
-    if(exi(s2,s1)){
-        return 1;
+    int p=1;
+    for(int i=0;i<s2.length()-s1.length()+1;i++){
+        for(int j=0;j<s1.length();j++){
+            if(s2[i]==s1[j]){
+                s1.erase(j,1);
+
+            }
+        }       
     }
-    else if(ex(s2,revper)){
-        return 1;
-    }
-    return 0;
 }
 int main(){
     string s2;
