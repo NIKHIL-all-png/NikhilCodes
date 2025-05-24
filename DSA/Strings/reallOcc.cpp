@@ -9,21 +9,17 @@ int se(string s,string part){
                 return 1;
             }
         }
-    
     return 0;
 }
 void removeOccurences(string &s,string part){
     int p=s.length();
     int q=part.length();
-    
-    
         for(int i=0;i<=p-q;i++){
             if(s.substr(i,q)==part){
                 s.erase(i,q);
                 break;
             }
         }
-    
 }
 int main(){
     string s;

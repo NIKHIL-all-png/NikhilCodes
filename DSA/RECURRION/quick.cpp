@@ -31,7 +31,6 @@ void quicksort(int arr[],int s,int e){
     }
     //Find the partion index
     int p=partition(arr,s,e);
-
     //left part sort karo
     quicksort(arr,s,p-1);
     //left part sort karo
@@ -41,6 +40,6 @@ int main(){
     int arr[6]={1,5,2,6,3,4};
     quicksort(arr,0,5);
     for(int i=0;i<6;i++){
-        cout<<arr[i]<<endl;
+        cout<<arr[i];
     }
 }
