@@ -34,15 +34,12 @@ void insertNode(Node* &tail,int element,int d){
         //non empty list
         //assuming that element is present in the lists
         Node* curr=tail;
-        while(curr->data != element){
-            curr=curr->next;
+        Node* start=tail;
+        do{
+            if(curr->data==element){
+                Node* temp=new Node(d);
+            }
         }
-        //element found
-        // current is representing element
-        Node* temp=new Node(d);
-        temp->next=curr->next;
-        curr->next=temp;
-        // prev->=curr->next;
     }
 }
 void print(Node* tail){

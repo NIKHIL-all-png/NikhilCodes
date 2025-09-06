@@ -1,10 +1,12 @@
 #include<iostream>
+#include<map>
 using namespace std;
 
 class Node {
     public:
     int data;
     Node *next;
+    
     Node(int data){
         this->data=data;
         this->next=NULL;
@@ -24,6 +26,22 @@ void print(Node* &head){
     }
     cout<<endl;
 }
+bool detectLoop(Node* head){
+    if(head==NULL){
+        return false;
+    }
+    map<Node*,bool> visited;
+    Node* temp=head;
+    while(temp!= NULL){
+        //cycle is present
+        if(visited[temp]==true){
+            return 1;
+        }
+        visited[temp]=true;
+        temp=temp->next;
+    }
+    return false;
+}
 int main(){
     //Created new node
     Node* node1=new Node(10);
@@ -31,11 +49,14 @@ int main(){
     // cout<<node1->next<<endl;
     //head pointed to node1
     Node* head=node1;
+    
     print(head);
     InsertAtHead(head,12);
     
-    print(head);
     InsertAtHead(head,15);
-    print(head);
+    
+    int p=detectLoop(head);
+
+    cout<<p;
     return 0;
 } 
