@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tribute to Swami Vivekananda</title>
+
+  <style>
+    :root {
+      --accent: #f97316; /* orange header bar */
+      --muted: #6b7280;
+      --card-bg: #fff;
+      --page-bg: #f3f4f6;
+      --maxw: 900px;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: system-ui, Roboto, Arial;
+      background: var(--page-bg);
+      color: #111827;
+    }
+
+    header.top[role="banner"] {
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+      padding: 22px 12px;
+    }
+
+    header.top[role="banner"] h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    main {
+      max-width: var(--maxw);
+      margin: 24px auto;
+      background: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(15,23,42,0.08);
+      padding: 28px;
+    }
+
+    /* image styling using attribute selector */
+    .hero [data-role="portrait"] {
+      display: block;
+      margin: 0 auto 16px;
+      width: 180px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+    }
+
+    /* short description */
+    p[data-summary] {
+      text-align: center;
+      color: var(--muted);
+      margin: 6px 0 20px;
+      font-size: 0.95rem;
+    }
+
+    /* facts table */
+    .facts {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 18px;
+    }
+
+    .facts th[data-key] {
+      text-align: left;
+      width: 28%;
+      padding: 8px 12px;
+      color: var(--muted);
+      font-weight: 600;
+      vertical-align: top;
+    }
+
+    .facts td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    /* highlight specific row */
+    .facts tr[data-row="main-achievement"] td {
+      background: linear-gradient(90deg, rgba(249,115,22,0.06), transparent);
+      font-weight: 600;
+    }
+
+    /* section headings */
+    h2[level="section"] {
+      text-align: center;
+      margin: 22px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    /* quote styling */
+    blockquote[data-quote] {
+      margin: 20px auto;
+      max-width: 720px;
+      text-align: center;
+      font-style: italic;
+      color: #111827;
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 18px; }
+      .hero [data-role="portrait"] { width: 140px; height: 190px; }
+      .facts th[data-key], .facts td {
+        display: block;
+        width: 100%;
+        padding: 6px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top" role="banner">
+    <h1>Tribute to Swami Vivekananda</h1>
+  </header>
+
+  <main role="main">
+    <section class="hero">
+      <!-- image stored in same folder as this HTML file -->
+      <img data-role="portrait" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7JO3omXbi02pcsjMyknq_pcBj5xfbqNG-VcHRW7Cx7x4zH8z2SJKYz7BpNSmKVq3qJnmAuLrCIshNbURQwq8p1elVFcyqZ5tPI_VwT1Nb&s=10" alt="Swami Vivekananda Portrait" />
+      <p data-summary>
+        Swami Vivekananda was an Indian Hindu monk and a key figure in introducing Indian philosophies of Vedanta and Yoga to the Western world.
+      </p>
+    </section>
+
+    <h2 level="section">Quick Facts</h2>
+
+    <table class="facts">
+      <tbody>
+        <tr data-row="name">
+          <th data-key="full-name">Full Name</th>
+          <td>Narendranath Datta</td>
+        </tr>
+        <tr data-row="born">
+          <th data-key="born">Born</th>
+          <td>January 12, 1863 — Kolkata, India</td>
+        </tr>
+        <tr data-row="guru">
+          <th data-key="guru">Guru</th>
+          <td>Sri Ramakrishna Paramahamsa</td>
+        </tr>
+        <tr data-row="main-achievement">
+          <th data-key="achievement">Main Achievement</th>
+          <td>Spread of Vedanta and Yoga to the world; Speech at the Parliament of Religions, 1893.</td>
+        </tr>
+        <tr data-row="philosophy">
+          <th data-key="philosophy">Philosophy</th>
+          <td>Unity of all religions, service to humanity, and spiritual growth.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 level="section">Inspirational Quote</h2>
+    <blockquote data-quote>
+      "Arise, awake, and stop not till the goal is reached."
+    </blockquote>
+  </main>
+</body>
+</html>

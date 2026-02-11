@@ -1,0 +1,12 @@
+d2={
+    'name':'nitish',
+    'college':'bit',
+    'sem':4,
+    'subjects':{
+        'dsa':50,
+        'maths':99,
+        'English':34
+    }
+}
+print(d2)
+print(d2['subjects']['maths']) 

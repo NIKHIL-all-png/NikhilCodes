@@ -1,0 +1,10 @@
+import numpy as np
+a=np.random.randint(1,100,15)
+print(a)
+b=np.random.randint(1,100,24).reshape(6,4)
+print(b)
+c=np.sort(a)
+print(c)
+d=np.sort(b,axis=0)
+print(d)
+print(np.sort(a)[::-1])
